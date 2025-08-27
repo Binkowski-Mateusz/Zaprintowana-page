@@ -1,0 +1,11 @@
+header {
+    display: flex;
+    padding-inline: 16px;
+    padding-block: 8px;
+    font-style: bold;
+    font-size: 24px;
+    background-color: blueviolet;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
