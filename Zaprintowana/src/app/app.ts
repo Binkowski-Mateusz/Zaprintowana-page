@@ -5,11 +5,11 @@ import { Header } from './header/header';
 
 @Component({
   selector: 'app-root',
-  imports: [Pickbar, Header],
+  imports: [RouterOutlet, Header],
   template: `<app-header></app-header>
-  <app-pickbar></app-pickbar>`,
+  <router-outlet></router-outlet>`,
   styleUrls: ['./app.css']
-})
+}) 
 export class App {
   protected readonly title = signal('Zaprintowana');
 }
