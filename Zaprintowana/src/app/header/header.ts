@@ -1,10 +1,14 @@
 import { Component, signal } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { Todos } from '../todos/todos';
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './header.html',
-  styleUrl: './header.css'
+  styleUrl: './header.css',
+  providers: [Todos
+  ]
 })
 export class Header {
   title = signal('Zaprintowana');
